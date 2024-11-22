@@ -6,7 +6,7 @@ from PIL import Image
 import gdown
 
 # Google Drive 파일 ID
-file_id = '1rdkR6POqD45SCy0ZD659EpDnnytTyabZ'
+file_id = '1to0i7QzyRhDlriWbAxJpsmqXtRlcQsVN'
 
 # Google Drive에서 파일 다운로드 함수
 @st.cache(allow_output_mutation=True)
@@ -67,35 +67,14 @@ st.markdown("""
     .reportview-container .main .block-container {
         max-width: 90%;
         padding-top: 1rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-# 분류에 따라 다른 콘텐츠 관리
-content_data = {
-    labels[0]: {
-        'images': [
-            "https://via.placeholder.com/300?text=Label1_Image1",
-            "https://via.placeholder.com/300?text=Label1_Image2",
-            "https://via.placeholder.com/300?text=Label1_Image3"
-        ],
-        'videos': [
-            "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
-            "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
-            "https://www.youtube.com/watch?v=3JZ_D3ELwOQ"
-        ],
-        'texts': [
-            "시우민",
+        p석",
             "Label 1 관련 두 번째 텍스트 내용입니다.",
             "Label 1 관련 세 번째 텍스트 내용입니다."
         ]
     },
     labels[1]: {
         'images': [
-            "오세훈 제대해",
+            "https://via.placeholder.com/300?text=Label2_Image1",
             "https://via.placeholder.com/300?text=Label2_Image2",
             "https://via.placeholder.com/300?text=Label2_Image3"
         ],
@@ -105,7 +84,7 @@ content_data = {
             "https://www.youtube.com/watch?v=2Vv-BfVoq4g"
         ],
         'texts': [
-            "김종인 제대해",
+            "오세훈 제대해.",
             "Label 2 관련 두 번째 텍스트 내용입니다.",
             "Label 2 관련 세 번째 텍스트 내용입니다."
         ]
@@ -122,7 +101,7 @@ content_data = {
             "https://www.youtube.com/watch?v=3JZ_D3ELwOQ"
         ],
         'texts': [
-            "Label 3 관련 첫 번째 텍스트 내용입니다.",
+            "김종인 제대해",
             "Label 3 관련 두 번째 텍스트 내용입니다.",
             "Label 3 관련 세 번째 텍스트 내용입니다."
         ]
